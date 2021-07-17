@@ -85,29 +85,72 @@ const editordata={selectedText,lang,stdininp};
 
 
 
-axios.post('https://git.heroku.com/algorithmsaditya.git/runcode',editordata).then((response) => {console.log('Data sent'); 
+  fetch('https://git.heroku.com/algorithmsaditya.git/runcode' , {
+        method: "POST",
+        headers: {
+          'Content-type': 'application/json'
+        },
+        
+           body: editordata,
+        
+        
+    }
+    ).then((response) => {console.log('Data sent'); 
 
 
-var finaloutput=response.data.output;
-var cputime=response.data.cpuTime;
+    var finaloutput=response.data.output;
+    var cputime=response.data.cpuTime;
+    
+    console.log(finaloutput);
+    console.log(cputime);
+    
+    var resultandTime=finaloutput.concat("\n","CPU Time:",cputime)
+    
+    
+    this.setState({
+        codeoutput:resultandTime,
+        runstate:false
+    })
+    
+    console.log(response.data);})
+    
+    
+    .catch(err => {
+      console.error(err);
+    });
+    
 
-console.log(finaloutput);
-console.log(cputime);
-
-var resultandTime=finaloutput.concat("\n","CPU Time:",cputime)
 
 
-this.setState({
-    codeoutput:resultandTime,
-    runstate:false
-})
-
-console.log(response.data);})
 
 
-.catch(err => {
-  console.error(err);
-});
+
+
+
+
+// axios.post('https://git.heroku.com/algorithmsaditya.git/runcode',editordata).then((response) => {console.log('Data sent'); 
+
+
+// var finaloutput=response.data.output;
+// var cputime=response.data.cpuTime;
+
+// console.log(finaloutput);
+// console.log(cputime);
+
+// var resultandTime=finaloutput.concat("\n","CPU Time:",cputime)
+
+
+// this.setState({
+//     codeoutput:resultandTime,
+//     runstate:false
+// })
+
+// console.log(response.data);})
+
+
+// .catch(err => {
+//   console.error(err);
+// });
 
 
 
