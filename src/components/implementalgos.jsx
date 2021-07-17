@@ -65,7 +65,7 @@ componentDidMount(){
 
 // var editor = ace.edit("editor",{minLines: 2});
 //     editor.setTheme("ace/theme/monokai");
-// editor.resize()
+
 
 // editor.getSession().setMode("ace/mode/javascript");
 }
