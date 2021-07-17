@@ -1,0 +1,41 @@
+.mybars{
+    /* width: 5px; */
+    background-color: blue;
+    display: inline-block;
+    margin:1px;
+
+
+}
+.allbars{
+     margin-top:20px;
+     margin-left: 10px;
+     
+}
+
+.allbtns{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-gap: 250px; */
+    margin-left: 10px;
+    width: 80%;
+}
+
+
+
+
+
+.btn {
+    margin: 1px;
+    
+
+}
+
+.links{
+font-size: 15px;
+color: #FFF;
+}
+
+a {
+    color: #FFF;
+  }

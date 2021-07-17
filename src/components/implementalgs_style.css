@@ -1,0 +1,65 @@
+article{
+display: grid;
+grid-template-columns: 1fr 0.5in [start] minmax(0,7.5) [end] 0.5in 1fr;
+height: 100vh;
+padding: 0.5in 1in;
+font-size: large;
+
+}
+
+p{
+    font-size: large;
+    padding: 0.5in 0.5in;
+    margin-left: 2em;
+}
+
+article * {
+    grid-column: start/end;
+}
+
+
+@media (max-width:8.5in){
+    article{
+        grid-template-columns: 1fr 5% [start] minmax(0,7.5) [end] 5% 1fr;
+    }
+}
+
+.explain{
+
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    padding: 0 0.3in;
+
+}
+
+img{
+    float: right;
+    margin-right: 10px;
+    
+}
+.psuedo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin-left: 10px;
+    width: 100%;
+    margin-top: 0px;
+}
+
+
+.btn{
+    /* margin:50px; */
+    text-align: center;
+}
+
+.sortingalgos{
+    padding: 80px;
+}

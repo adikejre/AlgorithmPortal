@@ -1,0 +1,75 @@
+#editor{
+    border: 1px solid lightcoral;
+    height: 400px;
+    width: 100%;
+    margin:10px;
+    margin-top: 0px;
+}
+
+.lang_select{
+
+    width:20%;
+    margin: auto;
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.1fr;
+    grid-gap: 30px;
+    
+
+}
+
+.myeditor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    margin-left: 10px;
+    width: 100%;
+    margin-top: 0px;
+}
+
+
+#inp{
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 100px;
+    width:80%;
+}
+
+#run{
+    margin-left: 20px;
+}
+
+.btn{
+    min-width: 70px;
+    min-height: 40px;
+    font-size: large;
+}
+
+.mynav{
+    /* padding: 10px; */
+    display: flex;
+    align-items: flex-start;
+    margin: 0 ;
+    border-bottom: 1px solid #000f83;
+}
+
+.mynav h1{
+    color: rgb(59, 42, 63);
+}
+
+.mynav .links{
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+#stylelabel{
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.links2{
+    margin-left: auto;
+    display: inline-block
+    ;
+}

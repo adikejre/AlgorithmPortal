@@ -1,0 +1,73 @@
+/* .node1{
+height: 60px;
+  width: 60px;
+
+  border-radius: 50%;
+  cursor: pointer;
+
+margin: 50px;;
+
+}
+
+.node2{
+    height: 60px;
+    width: 60px;
+  cursor: pointer;
+    
+    border-radius: 50%;
+margin: 3px;
+background-color: lightcoral;
+
+}
+
+
+.node3{
+    height: 60px;
+    width: 60px;
+  cursor: pointer;
+    
+    
+    border-radius: 50%;
+margin: 20px;
+background-color: lightcoral;
+
+} */
+
+/* .node4{
+  height: 60px;
+  width: 60px;
+cursor: pointer;
+  border-radius: 50%;
+margin: 20px;
+background-color: lightcoral;
+
+}
+
+.node5{
+  height: 60px;
+  width: 60px;
+cursor: pointer;
+  border-radius: 50%;
+margin: 20px;
+background-color: lightcoral;
+
+}
+.node6{
+  height: 60px;
+  width: 60px;
+cursor: pointer;
+  
+  border-radius: 50%;
+margin: 80px;
+background-color: lightcoral;
+
+}
+ */
+
+
+.personimg{
+    max-width: 90%; 
+   max-height: 90%; 
+    object-fit: cover;
+    vertical-align: middle;
+}
