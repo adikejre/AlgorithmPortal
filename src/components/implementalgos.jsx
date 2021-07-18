@@ -85,10 +85,11 @@ const editordata={selectedText,lang,stdininp};
 
 
 
-  fetch('https://git.heroku.com/algorithmsaditya.git/runcode' , {
+  fetch('http://localhost:4000/runcode' , {
         method: "POST",
         headers: {
-          'Content-type': 'application/json'
+          'Content-type': 'application/json',
+          
         },
         
            body: editordata,
