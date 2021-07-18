@@ -85,40 +85,40 @@ const editordata={selectedText,lang,stdininp};
 
 
 
-  fetch('http://localhost:4000/runcode' , {
-        method: "POST",
-        headers: {
-          'Content-type': 'application/json',
+//   fetch('http://localhost:4000/runcode' , {
+//         method: "POST",
+//         headers: {
+//           'Content-type': 'application/json',
           
-        },
+//         },
         
-           body: editordata,
+//            body: editordata,
         
         
-    }
-    ).then((response) => {console.log('Data sent'); 
+//     }
+//     ).then((response) => {console.log('Data sent'); 
 
 
-    var finaloutput=response.data.output;
-    var cputime=response.data.cpuTime;
+//     var finaloutput=response.data.output;
+//     var cputime=response.data.cpuTime;
     
-    console.log(finaloutput);
-    console.log(cputime);
+//     console.log(finaloutput);
+//     console.log(cputime);
     
-    var resultandTime=finaloutput.concat("\n","CPU Time:",cputime)
-    
-    
-    this.setState({
-        codeoutput:resultandTime,
-        runstate:false
-    })
-    
-    console.log(response.data);})
+//     var resultandTime=finaloutput.concat("\n","CPU Time:",cputime)
     
     
-    .catch(err => {
-      console.error(err);
-    });
+//     this.setState({
+//         codeoutput:resultandTime,
+//         runstate:false
+//     })
+    
+//     console.log(response.data);})
+    
+    
+//     .catch(err => {
+//       console.error(err);
+//     });
     
 
 
@@ -129,29 +129,29 @@ const editordata={selectedText,lang,stdininp};
 
 
 
-// axios.post('https://git.heroku.com/algorithmsaditya.git/runcode',editordata).then((response) => {console.log('Data sent'); 
+axios.post('http://localhost:4000/runcode',editordata).then((response) => {console.log('Data sent'); 
 
 
-// var finaloutput=response.data.output;
-// var cputime=response.data.cpuTime;
+var finaloutput=response.data.output;
+var cputime=response.data.cpuTime;
 
-// console.log(finaloutput);
-// console.log(cputime);
+console.log(finaloutput);
+console.log(cputime);
 
-// var resultandTime=finaloutput.concat("\n","CPU Time:",cputime)
-
-
-// this.setState({
-//     codeoutput:resultandTime,
-//     runstate:false
-// })
-
-// console.log(response.data);})
+var resultandTime=finaloutput.concat("\n","CPU Time:",cputime)
 
 
-// .catch(err => {
-//   console.error(err);
-// });
+this.setState({
+    codeoutput:resultandTime,
+    runstate:false
+})
+
+console.log(response.data);})
+
+
+.catch(err => {
+  console.error(err);
+});
 
 
 
